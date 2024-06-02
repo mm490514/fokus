@@ -1,74 +1,78 @@
-![](thumbnail.png)
-
 # Fokus
 
-Olá, aventureiro(a) digital! Você acabou de embarcar na jornada de descoberta do nosso projeto incrível desenvolvido ao longo do curso "JavaScript: explorando a manipulação de elementos e da localStorage". Agarre-se à sua cadeira, pois vamos desbravar os mares do código!
+Fokus é um aplicativo fictício de gerenciamento de tarefas com foco em produtividade. Ele ajuda os usuários a otimizar seu tempo, alternando entre períodos de foco e descanso. Desenvolvido por Alura como um projeto educacional, este aplicativo inclui funcionalidades como um timer, música de foco, gerenciamento de tarefas e modos de descanso.
 
-## Uma pitada sobre o Projeto
+## Funcionalidades
 
-![](print.png)
+- **Timer com Modos de Foco e Descanso**: Três modos de contagem regressiva - foco (30 segundos), descanso curto (5 segundos) e descanso longo (15 segundos).
+- **Música de Fundo**: Opção de ativar ou desativar música durante o período de foco.
+- **Gerenciamento de Tarefas**: Adição, edição, conclusão e remoção de tarefas.
+- **Persistência de Dados**: As tarefas são armazenadas no localStorage, permitindo que os dados sejam mantidos após a atualização da página.
+- **Notificações Sonoras**: Alertas sonoros para início, pausa e término do período de foco.
 
+## Estrutura do Projeto
 
-O nosso querido projeto é uma aplicação web simples e interativa que permite aos usuários adicionar, editar, visualizar e remover tarefas, tudo em um ambiente visual agradável e amigável. Mas não se engane, apesar de sua simplicidade, ele é o campo de batalha onde você vai treinar e aprimorar suas habilidades em JavaScript e manipulação da DOM.
+### Arquivos Principais
 
-## As Magias que o Projeto Realiza
+1. **index.html**: Estrutura HTML do aplicativo.
+2. **styles.css**: Estilos CSS para o layout e aparência do aplicativo.
+3. **script.js**: Contém a lógica principal do timer e da interface do usuário.
+4. **script-crud.js**: Gerencia o CRUD (Create, Read, Update, Delete) das tarefas.
 
-1. Adicionar Tarefas: Um botão mágico revela um formulário onde você pode escrever e adicionar novas tarefas.
-2. Editar Tarefas: Clique em um botão editar e voilà, você pode alterar a descrição da tarefa.
-3. Visualizar Tarefas: As tarefas adicionadas estão todas lá, bonitas e organizadas, esperando por sua atenção.
-4. Marcar Tarefas como Completas: Quando uma tarefa é finalizada, ela muda de aparência. É a magia do CSS e JavaScript acontecendo!
-5. Remover Tarefas: Seja seletivo e remova apenas as tarefas completas ou jogue tudo para o alto e comece de novo com uma lista de tarefas limpa.
+### Bibliotecas Externas
 
-## O Caldeirão de Técnicas e Tecnologias
+- **Meyer Reset CSS**: Utilizado para redefinir os estilos padrão do navegador.
+- **Google Fonts**: Fontes Montserrat, Prata e Unbounded.
 
-Aqui é onde a mágica acontece! Mergulhamos profundamente nas águas de:
+## Estrutura HTML
 
-- Manipulação da DOM: Aprendemos a manipular a estrutura de nossa página com JavaScript, criando, removendo e alterando elementos HTML.
-- Eventos JavaScript: Exploramos o poder dos eventos JavaScript para criar uma interface interativa e responsiva.
-- LocalStorage: Ensaiamos a dança de armazenar e recuperar dados usando a LocalStorage, mantendo nossas tarefas seguras e acessíveis mesmo após o navegador ser fechado.
+O HTML é composto por várias seções principais:
 
-## Como Abrir e Rodar o Projeto: Um Mapa do Tesouro para Navegar no Código
+- **Header**: Contém o logotipo do aplicativo.
+- **Banner**: Inclui o título e uma imagem de destaque.
+- **Card**: Área onde estão os botões de modo (foco, descanso curto, descanso longo), o timer e a opção de música.
+- **Lista de Tarefas**: Seção para gerenciamento das tarefas com opções para adicionar, editar e remover tarefas.
+- **Footer**: Informação sobre o projeto e créditos.
 
-Ahoy, marujo(a) do código! Está pronto(a) para içar as velas e navegar pelas águas do nosso projeto? Segure firme o leme, pois vamos guiar você através dos passos para configurar e executar o projeto em seu ambiente local. Não se preocupe, não há monstros marinhos à vista, apenas um oceano de aprendizado esperando por você!
+## Scripts JavaScript
 
-### Abastecendo o Navio
+### script.js
 
-Certifique-se de que você tem um navegador web moderno instalado. Recomendamos o uso do Google Chrome ou Mozilla Firefox.
+Este script gerencia:
 
-#### Navegando até o Projeto
+- Alternância entre os modos de foco e descanso.
+- Início e pausa do timer.
+- Execução de músicas e sons de notificação.
+- Mudança de contexto visual (imagens e textos).
 
-Abra a pasta onde o projeto foi baixado ou extraído.
-Você encontrará um arquivo chamado index.html. Este é o nosso mapa do tesouro!
+### script-crud.js
 
+Este script gerencia:
 
-#### Içando as Velas
+- Adição, edição e remoção de tarefas.
+- Armazenamento das tarefas no localStorage.
+- Atualização da interface de acordo com as ações do usuário.
+- Eventos personalizados, como a conclusão do período de foco.
 
-Dê um duplo clique no arquivo index.html. Voilà! O projeto será aberto em seu navegador padrão, e você será transportado(a) para as terras encantadas da nossa aplicação de gerenciamento de tarefas.
+## Como Executar o Projeto
 
-#### Explorando as Ilhas do Código
+1. Clone o repositório ou faça o download dos arquivos.
+2. Abra o arquivo `index.html` em um navegador web.
 
-Abra a pasta do projeto em seu editor de código favorito. Recomendamos o uso do Visual Studio Code ou Sublime Text.
+## Desenvolvimento
 
-Você encontrará três arquivos principais que contêm o código que faz a magia acontecer:
+Este projeto foi desenvolvido como parte de um curso da Alura e é inteiramente educacional. Todas as imagens foram geradas por IA no Adobe Firefly.
 
-- script-crud.js: Onde as funcionalidades de CRUD (Criar, Ler, Atualizar e Deletar) das tarefas são implementadas.
-- script.js: Um script adicional que pode conter outras funcionalidades JavaScript do projeto.
-- styles.css: Onde a beleza do projeto é criada, com todos os estilos CSS que fazem nossa aplicação brilhar.
+### Tecnologias Utilizadas
 
-#### Ajustando as Velas:
+- HTML5
+- CSS3
+- JavaScript
 
-Sinta-se livre para explorar, modificar e experimentar o código. O mar é vasto e cheio de descobertas!
+## Contribuição
 
-#### Mensagens na Garrafa:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
 
-Se você encontrar algum bug ou tiver sugestões de melhorias, não hesite em compartilhar seus feedbacks.
+## Créditos
 
-Agora com o mapa em mãos e as instruções seguras, você está pronto(a) para desbravar as águas do nosso projeto! 
-
-Que os ventos do aprendizado soprem sempre a seu favor, e que você encontre tesouros de conhecimento em cada linha de código. Boa viagem, e até a próxima aventura!
-
-![](https://media.tenor.com/cX92mi1p-NYAAAAd/coding-anime.gif)
-
-
-
-
+Projeto para estudo da linguagem.
